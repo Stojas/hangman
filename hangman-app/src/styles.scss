@@ -1,0 +1,90 @@
+@import './assets/styles/animations.scss';
+@import './assets/styles/mixins.scss';
+@import './assets/styles/variables.scss';
+
+//******RESET*******
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  font-size:100%;
+  font:inherit;
+  vertical-align:baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display:block;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+  padding-top: 60px;
+  background-color: white;
+  position: relative;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    @include titles-font;
+    font-size: 30px;
+    -webkit-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: $green-color;
+    background-color: black;
+}
+
+.container{
+    width: 100vw;
+    min-height: calc(100vh - 60px);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 20px;
+    position: relative;
+    background-color: $dark-color;
+}
+
+.split-animation{
+    animation-name: split-word;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.smmooth-entrance{
+    animation-name: smooth-entrance;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.smmooth-content{
+  animation-name: smooth-entrance;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+button{
+    border: none;
+    outline: none;
+    min-width: 100px;
+    height: 65px;
+    border-radius: 5px;
+    padding: 0 20px;
+    cursor: pointer;
+    background-color: black;
+    @include flex-center;
+    color: white;
+    @include communicate-font;
+    font-size: 30px;
+}

@@ -1,0 +1,48 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/mixins.scss';
+
+.container__initial{
+    @include titles-font;
+    text-align: center;
+    background-color: $green-color;
+    display: flex;
+}
+
+.container__content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.container__desc{
+    @include communicate-font;
+    padding: 10px;
+    font-size: 40px;
+    color: white;
+    flex-grow: 1;
+    @include flex-center;
+}
+
+.line__divider{
+    height: 300px;
+    width: 2px;
+    border-radius: 2px;
+    background-color: white;
+    margin: 0 20px;
+}
+
+.container__button{
+    flex-grow: 1;
+    @include flex-center;
+}
+
+@media screen and (max-width: 500px){
+    .container__content{
+        flex-direction: column;
+    }
+    .line__divider{
+        display: none;
+    }
+}
+

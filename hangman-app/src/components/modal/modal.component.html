@@ -1,0 +1,7 @@
+<div *ngIf="modalService.$modalOpened | async" class="container__modal">
+  <div class="container__modal__window smmooth-entrance" [ngSwitch]="modalService.modalType" (click)="$event.stopPropagation()">
+    <app-modal-success *ngSwitchCase="MODALS.SUCCESS" [params]="modalService.params"></app-modal-success>
+    <app-modal-failed *ngSwitchCase="MODALS.FAILED" [params]="modalService.params"></app-modal-failed>
+    <app-modal-round  *ngSwitchCase="MODALS.ROUND" [params]="modalService.params"></app-modal-round>
+  </div>
+</div>

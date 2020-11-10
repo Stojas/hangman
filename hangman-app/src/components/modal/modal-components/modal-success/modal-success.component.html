@@ -1,0 +1,13 @@
+<div class="container__success smmooth-content">
+  <div class="success_title ">
+    Wygrałeś!
+  </div>
+
+  <div class="round" *ngFor="let round of params.roundsTime; let i = index;">
+    Czas rundy {{i+1}} &nbsp;&nbsp; 
+    <span *ngIf="round.hours > 0">{{round.hours}}h&nbsp;</span>
+    <span *ngIf="round.minutes > 0">{{round.minutes}}m&nbsp;</span>
+    <span *ngIf="round.seconds > 0">{{round.seconds}}s</span>
+  </div>
+  <button class="conta" type="button" (click)="close()" [routerLink]="'/'">Zamknij</button>
+</div>

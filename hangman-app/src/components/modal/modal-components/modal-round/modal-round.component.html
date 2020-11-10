@@ -1,0 +1,9 @@
+<div class="container__success smmooth-content">
+  <div class="success_title ">
+    Wygrałeś rundę {{params.actualRound}} w czasie &nbsp;
+    <span *ngIf="params.actualRoundTime.hours > 0">{{params.actualRoundTime.hours}}h&nbsp;</span>
+    <span *ngIf="params.actualRoundTime.minutes > 0">{{params.actualRoundTime.minutes}}m&nbsp;</span>
+    <span *ngIf="params.actualRoundTime.seconds > 0">{{params.actualRoundTime.seconds}}s</span>
+  </div>
+  <button class="conta" type="button" (click)="close()" >Graj dalej!</button>
+</div>

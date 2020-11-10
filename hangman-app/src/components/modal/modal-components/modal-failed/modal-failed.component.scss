@@ -1,0 +1,27 @@
+@import "../../../../assets/styles/variables.scss";
+@import "../../../../assets/styles/mixins.scss";
+
+.container__failed{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient($red-color, $dark-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    @include communicate-font;
+    overflow: auto;
+}
+
+.failed_title{
+    color: white;
+    margin: 20px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+button{
+    margin: 20px;
+}

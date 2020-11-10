@@ -1,0 +1,34 @@
+@import "../../assets/styles/animations.scss";
+@import "../../assets/styles/mixins.scss";
+@import "../../assets/styles/variables.scss";
+
+
+.container__modal{
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  height: 100vh;
+  @include flex-center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 150;
+}
+
+.container__modal__window{
+    height: 800px;
+    width: 800px;
+    background-color: #303030;
+
+}
+
+@media screen and (max-width: 800px){
+    .container__modal__window{
+        width: 100%;
+    }
+}
+
+@media screen and (max-height: 800px){
+    .container__modal__window{
+        height: 100%;
+    }
+}

@@ -1,0 +1,19 @@
+@mixin titles-font{
+    font-family: 'Indie Flower', cursive;
+    font-size: 50px;
+}
+
+@mixin normal-font{
+    font-family: 'Open Sans', sans-serif;
+}
+
+@mixin communicate-font{
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+}
+
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

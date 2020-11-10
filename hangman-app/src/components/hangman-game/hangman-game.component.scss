@@ -1,0 +1,17 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/mixins.scss';
+
+.game{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.divider{
+    width: 100%;
+    height: 2px;
+    background-color: $green-color;
+}

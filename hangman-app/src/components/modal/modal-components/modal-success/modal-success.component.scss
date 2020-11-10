@@ -1,0 +1,36 @@
+@import "../../../../assets/styles/variables.scss";
+@import "../../../../assets/styles/mixins.scss";
+
+.container__success{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient($green-color, $dark-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    @include communicate-font;
+    overflow: auto;
+}
+
+.success_title{
+    color: white;
+    margin: 20px;
+}
+
+.round{
+    height: 60px;
+    width: calc(100% - 20px);
+    margin: 10px;
+    background-color: $green-color;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
+    font-size: 25px;
+    color: white;
+    @include flex-center;
+}
+
+button{
+    margin: 20px;
+}

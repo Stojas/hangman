@@ -1,0 +1,10 @@
+@keyframes split-word {
+    from {transform: translateY(50px) rotateZ(30deg); opacity: 0}
+    to {transform: translateY(0) rotateZ(0); opacity: 1}
+  }
+  
+  @keyframes smooth-entrance {
+    from {transform: translateY(50px); opacity: 0}
+    to {transform: translateY(0); opacity: 1}
+  }
+  

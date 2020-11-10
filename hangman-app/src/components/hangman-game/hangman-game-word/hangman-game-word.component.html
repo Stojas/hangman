@@ -1,0 +1,29 @@
+<div class="game">
+  <div class="container__word">
+      <div class="container__underline" *ngFor="let letter of wordsService.tempArrWord;trackBy: wordsService.trackByFn">
+        <ng-container *ngIf="letter.length">
+          <div class="container__letter split-animation">{{letter}}</div>
+        </ng-container>
+      </div>
+  </div>
+  <div class="container__alpha">
+    <div class="alpha__letter" *ngFor="let letter of wordsService.alphabet" (click)="letterChanged(letter)">
+      {{letter}}
+    </div>
+  </div>
+  <div class="container__wrong">
+      <ng-container *ngFor="let wl of wordsService.wrongLetters">
+        <div class="letter split-animation" >
+          {{wl}}
+          <div class="letter__line"></div>
+        </div>
+      </ng-container>
+  </div>
+  <div class="container__rounds">
+    <div class="container__circle" [ngClass]="{'passed-round':  wordsService.round >= 1}">1</div>
+    <div class="container__circle" [ngClass]="{'passed-round':  wordsService.round >= 2}">2</div>
+    <div class="container__circle" [ngClass]="{'passed-round':  wordsService.round >= 3}">3</div>
+    <div class="container__circle" [ngClass]="{'passed-round':  wordsService.round >= 4}">4</div>
+    <div class="container__circle" [ngClass]="{'passed-round':  wordsService.round >= 5}">5</div>
+  </div>
+</div>

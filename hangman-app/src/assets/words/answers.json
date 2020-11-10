@@ -1,0 +1,124 @@
+{
+    "words": [
+        {
+            "id": 1000000,
+            "name": "arystokrata"
+        },
+        {
+            "id": 1000001,
+            "name": "lampa"
+        },
+        {
+            "id": 1000002,
+            "name": "lodówka"
+        },
+        {
+            "id": 1000003,
+            "name": "procesja"
+        },
+        {
+            "id": 1000004,
+            "name": "szafka"
+        },
+        {
+            "id": 1000005,
+            "name": "oko"
+        },
+        {
+            "id": 1000006,
+            "name": "głowa"
+        },
+        {
+            "id": 1000007,
+            "name": "piekarnik"
+        },
+        {
+            "id": 1000008,
+            "name": "miłość"
+        },
+        {
+            "id": 1000009,
+            "name": "program"
+        },
+        {
+            "id": 1000010,
+            "name": "komputer"
+        },
+        {
+            "id": 1000011,
+            "name": "monitor"
+        },
+        {
+            "id": 1000012,
+            "name": "włosy"
+        },
+        {
+            "id": 1000013,
+            "name": "paznokcie"
+        },
+        {
+            "id": 1000014,
+            "name": "kwiat"
+        },
+        {
+            "id": 1000015,
+            "name": "profesja"
+        },
+        {
+            "id": 1000016,
+            "name": "zawód"
+        },
+        {
+            "id": 1000017,
+            "name": "powiat"
+        },
+        {
+            "id": 1000018,
+            "name": "ściana"
+        },
+        {
+            "id": 1000019,
+            "name": "budżet"
+        },
+        {
+            "id": 1000020,
+            "name": "film"
+        },
+        {
+            "id": 1000021,
+            "name": "dieta"
+        },
+        {
+            "id": 1000022,
+            "name": "wspinaczka"
+        },
+        {
+            "id": 1000023,
+            "name": "góry"
+        },
+        {
+            "id": 1000024,
+            "name": "łąka"
+        },
+        {
+            "id": 1000025,
+            "name": "las"
+        },
+        {
+            "id": 1000026,
+            "name": "trawa"
+        },
+        {
+            "id": 1000027,
+            "name": "wiatr"
+        },
+        {
+            "id": 1000028,
+            "name": "chmury"
+        },
+        {
+            "id": 1000029,
+            "name": "zapas"
+        }
+    ]
+}
